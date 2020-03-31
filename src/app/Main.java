@@ -17,7 +17,7 @@ public class Main extends Application {
         primaryStage.getIcons().add(icon);
 
         primaryStage.setTitle(" Future Value Calculator");
-        primaryStage.setScene(new Scene(root, 550, 350));
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
