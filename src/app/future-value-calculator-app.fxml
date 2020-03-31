@@ -4,7 +4,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane alignment="center" hgap="10" style="-fx-font-size: 16" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="app.Controller">
+<GridPane alignment="center" hgap="10" style="-fx-font-size: 16" vgap="10"
+          xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/10.0.2-internal"
+          fx:controller="app.Controller">
 
     <padding>
         <Insets bottom="35" left="25" right="25" top="25" />
@@ -27,12 +30,15 @@
     <TextField fx:id="futureValueField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
     <!-- Buttons -->
-    <HBox alignment="BOTTOM_CENTER" spacing="10" style="-fx-cursor: hand" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="4" GridPane.rowSpan="1">
+    <HBox alignment="BOTTOM_CENTER" spacing="10" style="-fx-cursor: hand" GridPane.columnIndex="0"
+          GridPane.columnSpan="3" GridPane.rowIndex="4" GridPane.rowSpan="1">
+
         <Button onAction="#calculateButtonClicked" text="Calculate" />
         <Button onAction="#resetButtonClicked" text="Reset" />
         <Button onAction="#terminateButtonClicked" text="Terminate" />
       <GridPane.margin>
          <Insets top="15.0" />
       </GridPane.margin>
+
     </HBox>
 </GridPane>
