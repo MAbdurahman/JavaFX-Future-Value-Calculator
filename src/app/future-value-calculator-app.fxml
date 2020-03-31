@@ -1,0 +1,39 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<GridPane fx:controller="app.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10"
+            style="-fx-font-size: 16">
+
+    <padding>
+        <Insets top="25" left="25" bottom="35" right="25" />
+    </padding>
+
+    <!-- Monthly Investment -->
+    <Label text="Monthly Investment:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="investmentField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <!-- Yearly Interest Rate -->
+    <Label text="Yearly Interest Rate:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="interestRateField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <!-- Number of Years -->
+    <Label text="Number of Years:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="numberYearsField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <!-- Future Value -->
+    <Label text="Future Value:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="futureValueField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <!-- Buttons -->
+    <HBox spacing="10" alignment="BOTTOM_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="4"
+          GridPane.columnSpan="3" GridPane.rowSpan="1" style="-fx-cursor: hand">
+        <Button text="Calculate" onAction="#calculateButtonClicked" />
+        <Button text="Reset" onAction="#resetButtonClicked" />
+        <Button text="Terminate" onAction="#terminateButtonClicked" />
+    </HBox>
+</GridPane>
